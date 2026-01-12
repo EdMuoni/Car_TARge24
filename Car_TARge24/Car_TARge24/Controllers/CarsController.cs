@@ -12,8 +12,8 @@ namespace Car_TARge24.Controllers
     public class CarsController: Controller
     {
 
-        private readonly Car_TARge24Context _context;
-        private readonly ICarServices _carServices;
+        //private readonly Car_TARge24Context _context;
+        //private readonly ICarServices _carServices;
 
     }
 }
