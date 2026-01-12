@@ -1,0 +1,46 @@
+﻿@model IEnumerable<Car_TARge24.Models.Cars.CarIndexViewModel>
+
+@{
+    int rowNumber = 1;
+}
+
+<div>
+    <a asp-action="create" asp-controller="Cars" type="submit" class="btn btn-primary" id="CreateButtonAction">Create</a>
+</div>
+
+<div class="h1">
+    Cars
+</div>
+<form method="get">
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th scope="col">Nr</th>
+                <th scope="col">Brand</th>
+                <th scope="col">Model</th>
+                <th scope="col">EnginePower</th>
+                <th scope="col">Year</th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var car in Model)
+            {
+                <tr>
+                    <td>@rowNumber</td>
+                    <td id="testIdBrand_I">@car.Brand</td>
+                    <td id="testModel_I">@car.Model</td>
+                    <td id="testEnginePower_I">@car.EnginePower</td>
+                    <td id="testYear_I">@car.Year</td>
+                    <td>
+                        <a asp-action="details" asp-controller="cars" asp-route-id="@car.Id" class="btn btn-primary" id="DetailsButtonAction">Details</a>
+                        <a asp-action="update" asp-controller="cars" asp-route-id="@car.Id" class="btn btn-primary" id="UpdateButtonAction">Update</a>
+                        <a asp-action="delete" asp-controller="cars" asp-route-id="@car.Id" class="btn btn-outline-danger" id="DeleteButtonAction">Delete</a>
+                    </td>
+                </tr>
+                rowNumber += 1;
+            }
+        </tbody>
+    </table>
+</form>
+
