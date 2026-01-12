@@ -1,0 +1,59 @@
+﻿@model Car_TARge24.Models.Cars.CarCreateUpdateViewModel
+
+@if (Model.Id.HasValue)
+{
+    <h1>Update</h1>
+}
+else
+{
+    <h1>Create</h1>
+}
+
+
+<div>
+    <form method="post" enctype="multipart/form-data">
+        <input asp-for="Id" type="hidden" />
+        <input asp-for="CreatedAt" type="hidden" />
+        <input asp-for="UpdatedAt" type="hidden" />
+
+        <div class="form-group row">
+            <label asp-for="Brand" class="col-sm-2 col-form-label"></label>
+            <div class="col-sm-10">
+                <input asp-for="Brand" class="form-control" id="BrandInput" />
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label asp-for="Model" class="col-sm-2 col-form-label"></label>
+            <div class="col-sm-10">
+                <input asp-for="Model" class="form-control" id="ModelInput" />
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label asp-for="EnginePower" class="col-sm-2 col-form-label"></label>
+            <div class="col-sm-10">
+                <input asp-for="EnginePower" class="form-control" id="EnginePowerInput" />
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label asp-for="Year" class="col-sm-2 col-form-label"></label>
+            <div class="col-sm-10">
+                <input asp-for="Year" class="form-control" id="YearInput" />
+            </div>
+        </div>
+
+
+        @if (Model.Id.HasValue)
+        {
+            <input asp-action="update" asp-controller="cars" type="submit" class="btn btn-success" value="Update" id="UpdateButtonAction" />
+        }
+        else
+        {
+            <input asp-action="create" asp-controller="cars" type="submit" class="btn btn-success" value="Create" id="CreateButtonAction" />
+        }
+
+        <a asp-action="Index" asp-controller="cars" class="btn btn-success" id="BackButtonAction">Back</a>
+    </form>
+</div>
