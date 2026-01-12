@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Dto\" />
+    <ProjectReference Include="..\Car_TARge24.Data\Car_TARge24.Data.csproj" />
   </ItemGroup>
 
 </Project>

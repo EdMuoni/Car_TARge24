@@ -1,7 +1,14 @@
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.FileProviders;
+using Car_TARge24.ApplicationServices.Services;
+using Car_TARge24.Core.ServiceInterface;
+using Car_TARge24.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddScoped<ICarServices, CarServices>();
 
 var app = builder.Build();
 
