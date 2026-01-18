@@ -6,6 +6,7 @@ using Car_TARge24.Data;
 using Car_TARge24.Models.Cars;
 using Car_TARge24.Core.ServiceInterface;
 
+
 namespace Car_TARge24.Controllers
 
 {
@@ -28,7 +29,7 @@ namespace Car_TARge24.Controllers
         public IActionResult Index()
         {
             var result = _context.Cars
-                .Select(x => new CarViewModel
+                .Select(x => new CarIndexViewModel
                 {
                     Id = x.Id,
                     Brand = x.Brand,
@@ -64,4 +65,5 @@ namespace Car_TARge24.Controllers
             await _carServices.Create(dto);
             return RedirectToAction("Index");
         }
+    }
 }

@@ -1604,7 +1604,8 @@
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
           "Car_TARge24.Core": "1.0.0",
-          "Car_TARge24.Data": "1.0.0"
+          "Car_TARge24.Data": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "9.0.8"
         },
         "compile": {
           "bin/placeholder/Car_TARge24.ApplicationServices.dll": {}
