@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\Jazztime\\Desktop\\TARge24\\Veebiarendus\\Car_TARge24\\Car_TARge24\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{CCAF7EAF-97B7-4BDC-99E9-AABE517BA968}|Car_TARge24\\Car_TARge24.csproj|c:\\users\\jazztime\\desktop\\targe24\\veebiarendus\\car_targe24\\car_targe24\\car_targe24\\models\\cars\\carindexviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CCAF7EAF-97B7-4BDC-99E9-AABE517BA968}|Car_TARge24\\Car_TARge24.csproj|solutionrelative:car_targe24\\models\\cars\\carindexviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCAF7EAF-97B7-4BDC-99E9-AABE517BA968}|Car_TARge24\\Car_TARge24.csproj|c:\\users\\jazztime\\desktop\\targe24\\veebiarendus\\car_targe24\\car_targe24\\car_targe24\\controllers\\carscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CCAF7EAF-97B7-4BDC-99E9-AABE517BA968}|Car_TARge24\\Car_TARge24.csproj|solutionrelative:car_targe24\\controllers\\carscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CCAF7EAF-97B7-4BDC-99E9-AABE517BA968}|Car_TARge24\\Car_TARge24.csproj|c:\\users\\jazztime\\desktop\\targe24\\veebiarendus\\car_targe24\\car_targe24\\car_targe24\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{CCAF7EAF-97B7-4BDC-99E9-AABE517BA968}|Car_TARge24\\Car_TARge24.csproj|solutionrelative:car_targe24\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
@@ -31,6 +39,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "CarIndexViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Jazztime\\Desktop\\TARge24\\Veebiarendus\\Car_TARge24\\Car_TARge24\\Car_TARge24\\Models\\Cars\\CarIndexViewModel.cs",
+              "RelativeDocumentMoniker": "Car_TARge24\\Models\\Cars\\CarIndexViewModel.cs",
+              "ToolTip": "C:\\Users\\Jazztime\\Desktop\\TARge24\\Veebiarendus\\Car_TARge24\\Car_TARge24\\Car_TARge24\\Models\\Cars\\CarIndexViewModel.cs",
+              "RelativeToolTip": "Car_TARge24\\Models\\Cars\\CarIndexViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-18T19:03:27.931Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CarsController.cs",
+              "DocumentMoniker": "C:\\Users\\Jazztime\\Desktop\\TARge24\\Veebiarendus\\Car_TARge24\\Car_TARge24\\Car_TARge24\\Controllers\\CarsController.cs",
+              "RelativeDocumentMoniker": "Car_TARge24\\Controllers\\CarsController.cs",
+              "ToolTip": "C:\\Users\\Jazztime\\Desktop\\TARge24\\Veebiarendus\\Car_TARge24\\Car_TARge24\\Car_TARge24\\Controllers\\CarsController.cs",
+              "RelativeToolTip": "Car_TARge24\\Controllers\\CarsController.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAQwAYAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-18T19:02:46.553Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Jazztime\\Desktop\\TARge24\\Veebiarendus\\Car_TARge24\\Car_TARge24\\Car_TARge24\\appsettings.json",
               "RelativeDocumentMoniker": "Car_TARge24\\appsettings.json",
@@ -43,7 +77,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Car_TARge24Context.cs",
               "DocumentMoniker": "C:\\Users\\Jazztime\\Desktop\\TARge24\\Veebiarendus\\Car_TARge24\\Car_TARge24\\Car_TARge24.Data\\Car_TARge24Context.cs",
               "RelativeDocumentMoniker": "Car_TARge24.Data\\Car_TARge24Context.cs",
@@ -64,7 +98,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "CarDto.cs",
               "DocumentMoniker": "C:\\Users\\Jazztime\\Desktop\\TARge24\\Veebiarendus\\Car_TARge24\\Car_TARge24\\Car_TARge24.Core\\Dto\\CarDto.cs",
               "RelativeDocumentMoniker": "Car_TARge24.Core\\Dto\\CarDto.cs",
@@ -77,7 +111,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "CarServices.cs",
               "DocumentMoniker": "C:\\Users\\Jazztime\\Desktop\\TARge24\\Veebiarendus\\Car_TARge24\\Car_TARge24\\Car_TARge24.ApplicationServices\\Services\\CarServices.cs",
               "RelativeDocumentMoniker": "Car_TARge24.ApplicationServices\\Services\\CarServices.cs",
