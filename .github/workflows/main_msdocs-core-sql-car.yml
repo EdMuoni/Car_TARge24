@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./Car_TARge24
+        working-directory: ./Car_TARge24/Car_TARge24
     permissions:
       contents: read #This is required for actions/checkout
     steps:
@@ -25,9 +25,7 @@ jobs:
         run: dotnet tool install --global dotnet-ef --version 8.*
       
       - name: Generate migrations bundle
-        run: |
-          cd Car_TARge24
-          dotnet ef migrations bundle --self-contained -r linux-x64 -o migrationsbundle
+        run: dotnet ef migrations bundle --self-contained -r linux-x64 -o migrationsbundle
 
       - name: Build with dotnet
         run: dotnet build --configuration Release
@@ -70,6 +68,7 @@ jobs:
           app-name: 'msdocs-core-sql-car'
           slot-name: 'Production'
           package: .
+
 
 
 
