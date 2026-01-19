@@ -25,11 +25,11 @@ jobs:
         run: dotnet tool install --global dotnet-ef --version 8.*
       
       - name: Generate migrations bundle
-        run: dotnet ef migrations bundle --project ./Car_TARge24/Car_TARge24.csproj --self-contained -r linux-x64 -o ./Car_TARge24/migrationsbundle
-        
+        run: dotnet ef migrations bundle --self-contained -r linux-x64 -o migrationsbundle
+
       - name: Build with dotnet
         run: dotnet build --configuration Release
-        
+
       - name: dotnet publish
         run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/myapp
 
@@ -68,6 +68,7 @@ jobs:
           app-name: 'msdocs-core-sql-car'
           slot-name: 'Production'
           package: .
+
 
 
 
