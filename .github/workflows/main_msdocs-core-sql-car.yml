@@ -25,6 +25,12 @@ jobs:
         uses: actions/setup-dotnet@v4
         with:
           dotnet-version: '8.x'
+          
+      - name: Install EF Core tools
+        run: dotnet tool install --global dotnet-ef --version 8.*
+      
+      - name: Generate migrations bundle
+        run: dotnet ef migrations bundle --self-contained -r linux-x64 -o migrationsbundle
 
       - name: Build with dotnet
         run: dotnet build --configuration Release
@@ -65,3 +71,4 @@ jobs:
           app-name: 'msdocs-core-sql-car'
           slot-name: 'Production'
           package: .
+
