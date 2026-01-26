@@ -1,28 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Jazztime\\Desktop\\TARge24\\Veebiarendus\\Car_TARge24\\Car_TARge24\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{44D9E6C6-6E16-463C-A7C1-98A7D0D3F9CB}|Car_TARge24.ApplicationServices\\Car_TARge24.ApplicationServices.csproj|c:\\users\\jazztime\\desktop\\targe24\\veebiarendus\\car_targe24\\car_targe24\\car_targe24.applicationservices\\car_targe24.applicationservices.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{44D9E6C6-6E16-463C-A7C1-98A7D0D3F9CB}|Car_TARge24.ApplicationServices\\Car_TARge24.ApplicationServices.csproj|solutionrelative:car_targe24.applicationservices\\car_targe24.applicationservices.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CCAF7EAF-97B7-4BDC-99E9-AABE517BA968}|Car_TARge24\\Car_TARge24.csproj|c:\\users\\jazztime\\desktop\\targe24\\veebiarendus\\car_targe24\\car_targe24\\car_targe24\\car_targe24.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{CCAF7EAF-97B7-4BDC-99E9-AABE517BA968}|Car_TARge24\\Car_TARge24.csproj|solutionrelative:car_targe24\\car_targe24.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CCAF7EAF-97B7-4BDC-99E9-AABE517BA968}|Car_TARge24\\Car_TARge24.csproj|c:\\users\\jazztime\\desktop\\targe24\\veebiarendus\\car_targe24\\car_targe24\\car_targe24\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{CCAF7EAF-97B7-4BDC-99E9-AABE517BA968}|Car_TARge24\\Car_TARge24.csproj|solutionrelative:car_targe24\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00551215-1F7D-4BC9-9C19-19B855627A6F}|Car_TARge24.Data\\Car_TARge24.Data.csproj|c:\\users\\jazztime\\desktop\\targe24\\veebiarendus\\car_targe24\\car_targe24\\car_targe24.data\\car_targe24context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{00551215-1F7D-4BC9-9C19-19B855627A6F}|Car_TARge24.Data\\Car_TARge24.Data.csproj|solutionrelative:car_targe24.data\\car_targe24context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CCAF7EAF-97B7-4BDC-99E9-AABE517BA968}|Car_TARge24\\Car_TARge24.csproj|c:\\users\\jazztime\\desktop\\targe24\\veebiarendus\\car_targe24\\car_targe24\\car_targe24\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CCAF7EAF-97B7-4BDC-99E9-AABE517BA968}|Car_TARge24\\Car_TARge24.csproj|solutionrelative:car_targe24\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -30,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -39,68 +18,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Jazztime\\Desktop\\TARge24\\Veebiarendus\\Car_TARge24\\Car_TARge24\\Car_TARge24\\appsettings.json",
-              "RelativeDocumentMoniker": "Car_TARge24\\appsettings.json",
-              "ToolTip": "C:\\Users\\Jazztime\\Desktop\\TARge24\\Veebiarendus\\Car_TARge24\\Car_TARge24\\Car_TARge24\\appsettings.json",
-              "RelativeToolTip": "Car_TARge24\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-01-25T22:47:37.118Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Car_TARge24.ApplicationServices.csproj",
-              "DocumentMoniker": "C:\\Users\\Jazztime\\Desktop\\TARge24\\Veebiarendus\\Car_TARge24\\Car_TARge24\\Car_TARge24.ApplicationServices\\Car_TARge24.ApplicationServices.csproj",
-              "RelativeDocumentMoniker": "Car_TARge24.ApplicationServices\\Car_TARge24.ApplicationServices.csproj",
-              "ToolTip": "C:\\Users\\Jazztime\\Desktop\\TARge24\\Veebiarendus\\Car_TARge24\\Car_TARge24\\Car_TARge24.ApplicationServices\\Car_TARge24.ApplicationServices.csproj",
-              "RelativeToolTip": "Car_TARge24.ApplicationServices\\Car_TARge24.ApplicationServices.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-01-25T22:47:31.71Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Car_TARge24Context.cs",
-              "DocumentMoniker": "C:\\Users\\Jazztime\\Desktop\\TARge24\\Veebiarendus\\Car_TARge24\\Car_TARge24\\Car_TARge24.Data\\Car_TARge24Context.cs",
-              "RelativeDocumentMoniker": "Car_TARge24.Data\\Car_TARge24Context.cs",
-              "ToolTip": "C:\\Users\\Jazztime\\Desktop\\TARge24\\Veebiarendus\\Car_TARge24\\Car_TARge24\\Car_TARge24.Data\\Car_TARge24Context.cs",
-              "RelativeToolTip": "Car_TARge24.Data\\Car_TARge24Context.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-25T22:47:19.966Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Jazztime\\Desktop\\TARge24\\Veebiarendus\\Car_TARge24\\Car_TARge24\\Car_TARge24\\Program.cs",
-              "RelativeDocumentMoniker": "Car_TARge24\\Program.cs",
-              "ToolTip": "C:\\Users\\Jazztime\\Desktop\\TARge24\\Veebiarendus\\Car_TARge24\\Car_TARge24\\Car_TARge24\\Program.cs",
-              "RelativeToolTip": "Car_TARge24\\Program.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAIwCAAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-25T22:36:09.551Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Car_TARge24.csproj",
-              "DocumentMoniker": "C:\\Users\\Jazztime\\Desktop\\TARge24\\Veebiarendus\\Car_TARge24\\Car_TARge24\\Car_TARge24\\Car_TARge24.csproj",
-              "RelativeDocumentMoniker": "Car_TARge24\\Car_TARge24.csproj",
-              "ToolTip": "C:\\Users\\Jazztime\\Desktop\\TARge24\\Veebiarendus\\Car_TARge24\\Car_TARge24\\Car_TARge24\\Car_TARge24.csproj",
-              "RelativeToolTip": "Car_TARge24\\Car_TARge24.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-01-25T22:35:03.549Z",
-              "EditorCaption": ""
             }
           ]
         },
