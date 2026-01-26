@@ -21,4 +21,8 @@
     <ProjectReference Include="..\Car_TARge24.Data\Car_TARge24.Data.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Views\Email\" />
+  </ItemGroup>
+
 </Project>
