@@ -119,7 +119,7 @@ namespace Car_TARge24.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> Delete(Guid id)
+        public async Task<IActionResult> Details(Guid id)
         {
             var cars = await _carServices.DetailAsync(id);
 
@@ -127,7 +127,7 @@ namespace Car_TARge24.Controllers
             {
                 return NotFound();
             }
-            var vm = new CarIndexViewModel();
+            var vm = new CarDetailsViewModel();
             {
                 vm.Id = cars.Id;
                 vm.Brand = cars.Brand;
@@ -136,8 +136,46 @@ namespace Car_TARge24.Controllers
                 vm.EnginePower = cars.EnginePower;
                 vm.Year = cars.Year;
                 vm.FuelConsumption = cars.FuelConsumption;
+
                 return View(vm);
             }
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Delete(Guid id)
+        {
+            var cars = await _carServices.DetailAsync(id);
+
+            if (cars == null)
+            {
+                return NotFound();
+            }
+
+            var vm = new CarDeleteViewModel();
+            {
+                vm.Id = cars.Id;
+                vm.Brand = cars.Brand;
+                vm.Model = cars.Model;
+                vm.Color = cars.Color;
+                vm.EnginePower = cars.EnginePower;
+                vm.Year = cars.Year;
+                vm.FuelConsumption = cars.FuelConsumption;
+
+                return View(vm);
+            }
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> DeleteConfirmation(Guid id)
+        {
+            var kindergarten = await _carServices.Delete(id);
+
+            if (kindergarten == null)
+            {
+                return RedirectToAction(nameof(Index));
+            }
+
+            return RedirectToAction(nameof(Index));
         }
     }
 }
