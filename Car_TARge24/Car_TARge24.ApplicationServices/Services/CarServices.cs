@@ -28,6 +28,7 @@ namespace Car_TARge24.ApplicationServices.Services
             cars.FuelConsumption = dto.FuelConsumption;
             cars.CreatedAt = DateTime.Now;
             cars.UpdatedAt = DateTime.Now;
+
             await _context.Cars.AddAsync(cars);
             await _context.SaveChangesAsync();
 
@@ -58,6 +59,7 @@ namespace Car_TARge24.ApplicationServices.Services
         {
             var result = await _context.Cars
                 .FirstOrDefaultAsync(x => x.Id == id);
+
             return result;
         }
 
@@ -66,7 +68,9 @@ namespace Car_TARge24.ApplicationServices.Services
             var result = await _context.Cars
                 .FirstOrDefaultAsync(x => x.Id == id);
             _context.Cars.Remove(result);
+
             await _context.SaveChangesAsync();
+
             return result;
         }
     }

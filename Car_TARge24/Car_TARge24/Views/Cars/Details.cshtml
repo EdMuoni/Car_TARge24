@@ -58,6 +58,17 @@
 
     <dl class="row">
         <div class="form-group row">
+            <label asp-for="FuelConsumption" class="col-sm-2 col-form-label"></label>
+            @Html.DisplayFor(model => model.FuelConsumption)
+        </div>
+
+        <div id="testIdFuelConsumption_D">
+            @Html.DisplayFor(model => model.FuelConsumption)
+        </div>
+    </dl>
+
+    <dl class="row">
+        <div class="form-group row">
             <label asp-for="CreatedAt" class="col-sm-2 col-form-label"></label>
             @Html.DisplayFor(model => model.CreatedAt)
         </div>

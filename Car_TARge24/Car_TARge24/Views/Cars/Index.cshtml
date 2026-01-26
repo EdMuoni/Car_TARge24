@@ -20,6 +20,7 @@
                 <th scope="col">Model</th>
                 <th scope="col">EnginePower</th>
                 <th scope="col">Year</th>
+                <th scope="col">FuelConsumption</th>
                 <th scope="col"></th>
             </tr>
         </thead>
@@ -32,6 +33,7 @@
                     <td id="testModel_I">@car.Model</td>
                     <td id="testEnginePower_I">@car.EnginePower</td>
                     <td id="testYear_I">@car.Year</td>
+                    <td id="testFuelConsumption_I">@car.FuelConsumption</td>
                     <td>
                         <a asp-action="details" asp-controller="cars" asp-route-id="@car.Id" class="btn btn-primary" id="DetailsButtonAction">Details</a>
                         <a asp-action="update" asp-controller="cars" asp-route-id="@car.Id" class="btn btn-primary" id="UpdateButtonAction">Update</a>

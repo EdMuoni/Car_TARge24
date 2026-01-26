@@ -7,7 +7,6 @@ namespace Car_TARge24.Data
     {
         public Car_TARge24Context(DbContextOptions<Car_TARge24Context> options): base(options)
         {  }
-
         public DbSet<Cars> Cars { get; set; }
     }
 }
