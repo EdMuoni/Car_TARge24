@@ -36,6 +36,7 @@ namespace Car_TARge24.Controllers
                     Model = x.Model,
                     EnginePower = x.EnginePower,
                     Year = x.Year,
+                    FuelConsumption = x.FuelConsumption,
                 });
 
             return View(result);
@@ -53,7 +54,7 @@ namespace Car_TARge24.Controllers
 
         public async Task<IActionResult> Create(CarCreateUpdateViewModel vm)
         {
-            CarDto dto = new()
+            var dto = new CarDto()
             {
                 Brand = vm.Brand,
                 Model = vm.Model,
@@ -62,8 +63,81 @@ namespace Car_TARge24.Controllers
                 Year = vm.Year,
                 FuelConsumption = vm.FuelConsumption,
             };
-            await _carServices.Create(dto);
-            return RedirectToAction("Index");
+            var result = await _carServices.Create(dto);
+
+            if (result == null)
+            {
+                return RedirectToAction(nameof(Index));
+            }
+
+            return RedirectToAction(nameof(Index));
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Update(Guid id)
+        {
+            var cars = await _carServices.DetailAsync(id);
+
+            if (cars == null)
+            {
+                return NotFound();
+            }
+            var vm = new CarCreateUpdateViewModel();
+            {
+                vm.Id = cars.Id;
+                vm.Brand = cars.Brand;
+                vm.Model = cars.Model;
+                vm.Color = cars.Color;
+                vm.EnginePower = cars.EnginePower;
+                vm.Year = cars.Year;
+                vm.FuelConsumption = cars.FuelConsumption;
+
+                return View("CreateUpdate", vm);
+            }
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Update(CarCreateUpdateViewModel vm)
+        {
+            var dto = new CarDto()
+            {
+                Id = vm.Id,
+                Brand = vm.Brand,
+                Model = vm.Model,
+                Color = vm.Color,
+                EnginePower = vm.EnginePower,
+                Year = vm.Year,
+                FuelConsumption = vm.FuelConsumption,
+            };
+            var result = await _carServices.Update(dto);
+
+            if (result == null)
+            {
+                return RedirectToAction(nameof(Index));
+            }
+            return RedirectToAction(nameof(Index));
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Delete(Guid id)
+        {
+            var cars = await _carServices.DetailAsync(id);
+
+            if (cars == null)
+            {
+                return NotFound();
+            }
+            var vm = new CarIndexViewModel();
+            {
+                vm.Id = cars.Id;
+                vm.Brand = cars.Brand;
+                vm.Model = cars.Model;
+                vm.Color = cars.Color;
+                vm.EnginePower = cars.EnginePower;
+                vm.Year = cars.Year;
+                vm.FuelConsumption = cars.FuelConsumption;
+                return View(vm);
+            }
         }
     }
 }
