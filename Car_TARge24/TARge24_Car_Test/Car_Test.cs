@@ -42,9 +42,10 @@ namespace TARge24_Car_Test
             var createdCar = await Svc<ICarServices>().Create(dto);
             //Requesting data using the created car ID
             //act
-            await Svc<ICarServices>().DetailAsync(createdCar.Id.Value);
+            var result = await Svc<ICarServices>().DetailAsync(createdCar.Id.Value);
             //Checking that the IDs are the same
             //assert
+            Assert.NotNull(result);
             Assert.Equal(createdCar.Id, createdCar.Id);
         }
 
