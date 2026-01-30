@@ -9,9 +9,19 @@
 
   <ItemGroup>
     <PackageReference Include="coverlet.collector" Version="6.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="9.0.8" />
+    <PackageReference Include="Microsoft.Extensions.FileProviders.Abstractions" Version="9.0.8" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="9.0.8" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.12.0" />
     <PackageReference Include="xunit" Version="2.9.2" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.8.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Car_TARge24.ApplicationServices\Car_TARge24.ApplicationServices.csproj" />
+    <ProjectReference Include="..\Car_TARge24.Core\Car_TARge24.Core.csproj" />
+    <ProjectReference Include="..\Car_TARge24.Data\Car_TARge24.Data.csproj" />
+    <ProjectReference Include="..\Car_TARge24\Car_TARge24.csproj" />
   </ItemGroup>
 
   <ItemGroup>

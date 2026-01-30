@@ -15,7 +15,7 @@ namespace Car_TARge24.Core.Dto
         public int? EnginePower { get; set; }
         public int? Year { get; set; }
         public int? FuelConsumption { get; set; }
-        public DateTime? CreatedAt { get; set; } = DateTime.MinValue;
-        public DateTime? UpdatedAt { get; set; } = DateTime.MinValue;
+        public DateTime? CreatedAt { get; set; } = DateTime.UtcNow;
+        public DateTime? UpdatedAt { get; set; } = DateTime.UtcNow;
     }
 }
