@@ -1,86 +1,52 @@
 ﻿@model Car_TARge24.Models.Cars.CarDetailsViewModel
 
-<h1>Details</h1>
+@{
+    ViewData["Title"] = "Car Details";
+}
 
-<div>
-    <h4>Cars</h4>
-    <hr />
-    <dl class="row">
-        <div class="form-group row">
-            <label asp-for="Id" class="col-sm-2 col-form-label"></label>
-            @Html.DisplayFor(model => model.Id)
-        </div>
-    </dl>
+<div class="container mt-4">
+    <h2 class="fw-bold mb-4"> Car Details</h2>
 
-    <dl class="row">
-        <div class="form-group row">
-            <label asp-for="Brand" class="col-sm-2 col-form-label"></label>
-            @Html.DisplayFor(model => model.Brand)
-        </div>
-
-        <div id="testIdBrand_D">
-            @Html.DisplayFor(model => model.Brand)
-        </div>
-    </dl>
-
-    <dl class="row">
-        <div class="form-group row">
-            <label asp-for="Model" class="col-sm-2 col-form-label"></label>
-            @Html.DisplayFor(model => model.Model)
-        </div>
-
-        <div id="testIdModel_D">
-            @Html.DisplayFor(model => model.Model)
-        </div>
-    </dl>
-
-    <dl class="row">
-        <div class="form-group row">
-            <label asp-for="EnginePower" class="col-sm-2 col-form-label"></label>
-            @Html.DisplayFor(model => model.EnginePower)
-        </div>
-
-        <div id="testIdEnginePower_D">
-            @Html.DisplayFor(model => model.EnginePower)
-        </div>
-    </dl>
-
-    <dl class="row">
-        <div class="form-group row">
-            <label asp-for="Year" class="col-sm-2 col-form-label"></label>
-            @Html.DisplayFor(model => model.Year)
-        </div>
-
-        <div id="testIdYear_D">
-            @Html.DisplayFor(model => model.Year)
-        </div>
-    </dl>
-
-    <dl class="row">
-        <div class="form-group row">
-            <label asp-for="FuelConsumption" class="col-sm-2 col-form-label"></label>
-            @Html.DisplayFor(model => model.FuelConsumption)
-        </div>
-
-        <div id="testIdFuelConsumption_D">
-            @Html.DisplayFor(model => model.FuelConsumption)
-        </div>
-    </dl>
-
-    <dl class="row">
-        <div class="form-group row">
-            <label asp-for="CreatedAt" class="col-sm-2 col-form-label"></label>
-            @Html.DisplayFor(model => model.CreatedAt)
-        </div>
-    </dl>
-
-    <dl class="row">
-        <div class="form-group row">
-            <label asp-for="UpdatedAt" class="col-sm-2 col-form-label"></label>
-            @Html.DisplayFor(model => model.UpdatedAt)
-        </div>
-    </dl>
+    <table class="table table-borderless" style="max-width: 500px;">
+        <tbody>
+            <tr>
+                <th class="text-muted">ID</th>
+                <td>@Html.DisplayFor(model => model.Id)</td>
+            </tr>
+            <tr>
+                <th class="text-muted">Brand</th>
+                <td id="testIdBrand_D">@Html.DisplayFor(model => model.Brand)</td>
+            </tr>
+            <tr>
+                <th class="text-muted">Model</th>
+                <td id="testIdModel_D">@Html.DisplayFor(model => model.Model)</td>
+            </tr>
+            <tr>
+                <th class="text-muted">EnginePower</th>
+                <td id="testIdEnginePower_D">@Html.DisplayFor(model => model.EnginePower) HP</td>
+            </tr>
+            <tr>
+                <th class="text-muted">Year</th>
+                <td id="testIdYear_D">@Html.DisplayFor(model => model.Year)</td>
+            </tr>
+            <tr>
+                <th class="text-muted">FuelConsumption</th>
+                <td id="testIdFuelConsumption_D">@Html.DisplayFor(model => model.FuelConsumption) L/100km</td>
+            </tr>
+            <tr>
+                <th class="text-muted">CreatedAt</th>
+                <td>@Html.DisplayFor(model => model.CreatedAt)</td>
+            </tr>
+            <tr>
+                <th class="text-muted">UpdatedAt</th>
+                <td>@Html.DisplayFor(model => model.UpdatedAt)</td>
+            </tr>
+        </tbody>
+    </table>
 
     <hr />
-    <a asp-action="Index" asp-controller="cars" class="btn btn-danger" id="BackButtonAction">Back</a>
+
+    <div class="d-flex gap-2">
+        <a asp-action="Index" asp-controller="cars" class="btn btn-primary" id="BackButtonAction">← Back</a>
+    </div>
 </div>

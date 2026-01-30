@@ -6,65 +6,53 @@
 }
 
 <div class="container mt-4">
-    <div class="row justify-content-center">
-        <div class="col-md-12 col-lg-10">
-
-            <div class="card shadow">
-
-                <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
-                    <h4 class="mb-0"> Cars</h4>
-                    <a asp-action="create" asp-controller="Cars" class="btn btn-light" id="CreateButtonAction">
-                        + Add New Car
-                    </a>
-                </div>
-
-                <div class="card-body">
-                    <form method="get">
-                        <table class="table table-hover">
-                            <thead class="table-primary">
-                                <tr>
-                                    <th scope="col">Nr</th>
-                                    <th scope="col">Brand</th>
-                                    <th scope="col">Model</th>
-                                    <th scope="col">EnginePower</th>
-                                    <th scope="col">Year</th>
-                                    <th scope="col">FuelConsumption</th>
-                                    <th scope="col" class="text-center">Actions</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                @foreach (var car in Model)
-                                {
-                                    <tr>
-                                        <td>@rowNumber</td>
-                                        <td id="testIdBrand_I">@car.Brand</td>
-                                        <td id="testModel_I">@car.Model</td>
-                                        <td id="testEnginePower_I">@car.EnginePower HP</td>
-                                        <td id="testYear_I">@car.Year</td>
-                                        <td id="testFuelConsumption_I">@car.FuelConsumption L/100km</td>
-                                        
-                                        <td class="text-center">
-                                            <a asp-action="details" asp-controller="cars" asp-route-id="@car.Id" class="btn btn-sm btn-info" id="DetailsButtonAction">Details</a>
-                                            <a asp-action="update" asp-controller="cars" asp-route-id="@car.Id" class="btn btn-sm btn-warning" id="UpdateButtonAction">Update</a>
-                                            <a asp-action="delete" asp-controller="cars" asp-route-id="@car.Id" class="btn btn-sm btn-outline-danger" id="DeleteButtonAction">Delete</a>
-                                        </td>
-                                    </tr>
-                                    rowNumber += 1;
-                                }
-                            </tbody>
-                        </table>
-
-                        @if (!Model.Any())
-                        {
-                            <div class="text-center text-muted py-4">
-                                <h5>No cars found</h5>
-                                <p>Click "Add New Car"</p>
-                            </div>
-                        }
-                    </form>
-                </div>
-
-            </div>
-        </div>
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h2 class="fw-bold"> Cars</h2>
+        <a asp-action="create" asp-controller="Cars" class="btn btn-primary" id="CreateButtonAction">
+            + Add New Car
+        </a>
     </div>
+
+    <form method="get">
+        <table class="table table-hover">
+            <thead class="table-primary">
+                <tr>
+                    <th scope="col">Nr</th>
+                    <th scope="col">Brand</th>
+                    <th scope="col">Model</th>
+                    <th scope="col">EnginePower</th>
+                    <th scope="col">Year</th>
+                    <th scope="col">FuelConsumption</th>
+                    <th scope="col" class="text-center">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var car in Model)
+                {
+                    <tr>
+                        <td>@rowNumber</td>
+                        <td id="testIdBrand_I">@car.Brand</td>
+                        <td id="testModel_I">@car.Model</td>
+                        <td id="testEnginePower_I">@car.EnginePower HP</td>
+                        <td id="testYear_I">@car.Year</td>
+                        <td id="testFuelConsumption_I">@car.FuelConsumption L/100km</td>
+                        <td class="text-center">
+                            <a asp-action="details" asp-controller="cars" asp-route-id="@car.Id" class="btn btn-sm btn-info" id="DetailsButtonAction">Details</a>
+                            <a asp-action="update" asp-controller="cars" asp-route-id="@car.Id" class="btn btn-sm btn-success" id="UpdateButtonAction">Update</a>
+                            <a asp-action="delete" asp-controller="cars" asp-route-id="@car.Id" class="btn btn-sm btn-outline-danger" id="DeleteButtonAction">Delete</a>
+                        </td>
+                    </tr>
+                    rowNumber += 1;
+                }
+            </tbody>
+        </table>
+
+        @if (!Model.Any())
+        {
+            <div class="text-center text-muted py-4">
+                <h5>No cars found</h5>
+                <p>Click "Add New Car"</p>
+            </div>
+        }
+    </form>
 </div>
