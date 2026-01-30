@@ -70,7 +70,7 @@ namespace TARge24_Car_Test
 
         //Kontrollime, et car andmeid saab uuendada
         [Fact]
-        public async Task Should_UpdateCar_WhenUpdateKindergartenData()
+        public async Task Should_UpdateCar_WhenUpdateCarData()
         {
             //arrange
             CarDto dto = MockCarData();
