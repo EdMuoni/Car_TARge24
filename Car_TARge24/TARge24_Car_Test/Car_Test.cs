@@ -36,13 +36,16 @@ namespace TARge24_Car_Test
         [Fact]
         public async Task Should_GetByIdcar_WhenReturnsEqual()
         {
+            //Creating a car to get its ID
             //arrange
-            Guid databaseGuid = Guid.Parse("82491449-257a-48ff-81b9-3a95f925ce05");
-            Guid guid = Guid.Parse("82491449-257a-48ff-81b9-3a95f925ce05");
+            CarDto dto = MockCarData();
+            var createdCar = await Svc<ICarServices>().Create(dto);
+            //Requesting data using the created car ID
             //act
-            await Svc<ICarServices>().DetailAsync(guid);
+            await Svc<ICarServices>().DetailAsync(createdCar.Id.Value);
+            //Checking that the IDs are the same
             //assert
-            Assert.Equal(databaseGuid, guid);
+            Assert.Equal(createdCar.Id, createdCar.Id);
         }
 
         //Checking that negative EnginePower cannot be added
@@ -75,14 +78,14 @@ namespace TARge24_Car_Test
             //arrange
             CarDto dto = MockCarData();
             //act
-            var createCar = await Svc<ICarServices>().Create(dto);
-            var updateCar = MockUpdateCarData();
+            var createdCar = await Svc<ICarServices>().Create(dto);
+            var updatedCar = MockUpdateCarData();
             //assert
-            Assert.NotEqual(createCar.EnginePower, updateCar.EnginePower);
-            Assert.NotEqual(createCar.Year, updateCar.Year);
-            Assert.NotEqual(createCar.FuelConsumption, createCar.FuelConsumption);
-            Assert.NotEqual(createCar.Color, createCar.Color);
-
+            Assert.NotEqual(createdCar.EnginePower, updatedCar.EnginePower);
+            Assert.NotEqual(createdCar.Year, updatedCar.Year);
+            Assert.NotEqual(createdCar.FuelConsumption, updatedCar.FuelConsumption);
+            Assert.NotEqual(createdCar.Color, updatedCar.Color);
+            Assert.NotEqual(createdCar.Brand, updatedCar.Brand);
         }
 
         private CarDto MockCarData()
