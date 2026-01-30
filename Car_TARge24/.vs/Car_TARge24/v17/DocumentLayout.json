@@ -50,8 +50,7 @@
               "RelativeToolTip": "Car_TARge24\\Views\\Cars\\Details.cshtml",
               "ViewState": "AgIAACEAAAAAAAAAAAAAADIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-01-30T12:53:06.543Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-30T12:53:06.543Z"
             },
             {
               "$type": "Document",
@@ -76,8 +75,7 @@
               "RelativeToolTip": "Car_TARge24\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-01-30T12:34:53.537Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-30T12:34:53.537Z"
             },
             {
               "$type": "Document",
@@ -89,8 +87,7 @@
               "RelativeToolTip": "Car_TARge24\\Views\\Cars\\Index.cshtml",
               "ViewState": "AgIAAA8AAAAAAAAAAAAAACgAAAB9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-01-30T12:22:40.524Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-30T12:22:40.524Z"
             },
             {
               "$type": "Document",
@@ -102,8 +99,7 @@
               "RelativeToolTip": "Car_TARge24\\Views\\Cars\\CreateUpdate.cshtml",
               "ViewState": "AgIAAEgAAAAAAAAAAAAAAGIAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-01-30T11:56:26.211Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-30T11:56:26.211Z"
             }
           ]
         },
