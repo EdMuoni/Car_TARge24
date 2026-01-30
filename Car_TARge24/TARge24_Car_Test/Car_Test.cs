@@ -7,7 +7,7 @@ namespace TARge24_Car_Test
     public class Car_Test : TestBase
     {
 
-        //Kontrollime, et tühje andmeid ei saa panna
+        //Checking that no empty data can be entered
         [Fact]
         public async Task ShouldNot_AddEmptyCar_WhenReturnResult()
         {
@@ -19,7 +19,7 @@ namespace TARge24_Car_Test
             Assert.NotNull(result);
         }
 
-        //Kontrollime, et vale ID-ga car ei saa kätte
+        //Checking that a car with the wrong ID cannot be accessed
         [Fact]
         public async Task ShouldNot_GetByIdcar_WhenReturnsNotEqual()
         {
@@ -32,7 +32,7 @@ namespace TARge24_Car_Test
             Assert.NotEqual(wrongGuid, guid);
         }
 
-        //Kontrollime, et õige ID-ga car saab kätte
+        //Checking that the car with the correct ID can be accessed
         [Fact]
         public async Task Should_GetByIdcar_WhenReturnsEqual()
         {
@@ -45,7 +45,7 @@ namespace TARge24_Car_Test
             Assert.Equal(databaseGuid, guid);
         }
 
-        //Kontrollime, et negatiivse EnginePower ei saa lisada
+        //Checking that negative EnginePower cannot be added
         [Fact]
         public async Task ShouldNot_AddCarWithNegativeEnginePower_WhenReturnResult()
         {
@@ -68,20 +68,20 @@ namespace TARge24_Car_Test
         }
 
 
-        //Kontrollime, et car andmeid saab uuendada
+        //Checking that car data can be updated
         [Fact]
         public async Task Should_UpdateCar_WhenUpdateCarData()
         {
             //arrange
             CarDto dto = MockCarData();
             //act
-            var createKindergarten = await Svc<ICarServices>().Create(dto);
-            var updateKindergarten = MockUpdateCarData();
+            var createCar = await Svc<ICarServices>().Create(dto);
+            var updateCar = MockUpdateCarData();
             //assert
-            Assert.NotEqual(createKindergarten.EnginePower, updateKindergarten.EnginePower);
-            Assert.NotEqual(createKindergarten.Year, updateKindergarten.Year);
-            Assert.NotEqual(createKindergarten.FuelConsumption, updateKindergarten.FuelConsumption);
-            Assert.NotEqual(createKindergarten.Color, updateKindergarten.Color);
+            Assert.NotEqual(createCar.EnginePower, updateCar.EnginePower);
+            Assert.NotEqual(createCar.Year, updateCar.Year);
+            Assert.NotEqual(createCar.FuelConsumption, createCar.FuelConsumption);
+            Assert.NotEqual(createCar.Color, createCar.Color);
 
         }
 
