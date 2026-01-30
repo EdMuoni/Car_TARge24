@@ -76,7 +76,7 @@
               "RelativeDocumentMoniker": "Car_TARge24.Core\\Dto\\EmailDto.cs",
               "ToolTip": "C:\\Users\\Jazztime\\Desktop\\TARge24\\Veebiarendus\\Car_TARge24\\Car_TARge24\\Car_TARge24.Core\\Dto\\EmailDto.cs",
               "RelativeToolTip": "Car_TARge24.Core\\Dto\\EmailDto.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAuwBEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-26T11:12:29.41Z",
               "EditorCaption": ""
@@ -91,8 +91,7 @@
               "RelativeToolTip": "Car_TARge24.Core\\ServiceInterface\\IEmailServices.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-26T11:11:44.508Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-26T11:11:44.508Z"
             },
             {
               "$type": "Document",
@@ -104,8 +103,7 @@
               "RelativeToolTip": "Car_TARge24\\Controllers\\EmailControllercs.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-26T11:00:59.872Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-26T11:00:59.872Z"
             },
             {
               "$type": "Document",
@@ -117,8 +115,7 @@
               "RelativeToolTip": "Car_TARge24\\Controllers\\HomeController.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABYAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-26T10:59:07.413Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-26T10:59:07.413Z"
             },
             {
               "$type": "Document",
@@ -130,8 +127,7 @@
               "RelativeToolTip": "Car_TARge24\\Views\\Cars\\Delete.cshtml",
               "ViewState": "AgIAADMAAAAAAAAAAAAAAEYAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-01-26T10:33:32.132Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-26T10:33:32.132Z"
             },
             {
               "$type": "Document",
@@ -143,8 +139,7 @@
               "RelativeToolTip": "Car_TARge24\\Models\\Cars\\CarCreateUpdateViewModel.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAAAxwAoAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-26T10:31:01.201Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-26T10:31:01.201Z"
             },
             {
               "$type": "Document",
@@ -156,8 +151,7 @@
               "RelativeToolTip": "Car_TARge24.ApplicationServices\\Services\\CarServices.cs",
               "ViewState": "AgIAAD0AAAAAAAAAAAAkwEUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-26T10:26:51.959Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-26T10:26:51.959Z"
             },
             {
               "$type": "Document",
@@ -169,8 +163,7 @@
               "RelativeToolTip": "Car_TARge24.Core\\ServiceInterface\\ICarServices.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-26T10:26:39.539Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-26T10:26:39.539Z"
             },
             {
               "$type": "Document",
@@ -182,8 +175,7 @@
               "RelativeToolTip": "Car_TARge24\\Models\\Cars\\CarDetailsViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-26T10:13:45.881Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-26T10:13:45.881Z"
             },
             {
               "$type": "Document",
@@ -195,8 +187,7 @@
               "RelativeToolTip": "Car_TARge24\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-01-26T09:33:07.166Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-26T09:33:07.166Z"
             },
             {
               "$type": "Document",
@@ -208,8 +199,7 @@
               "RelativeToolTip": "Car_TARge24\\Program.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-26T09:32:59.14Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-26T09:32:59.14Z"
             },
             {
               "$type": "Document",
@@ -221,8 +211,7 @@
               "RelativeToolTip": "Car_TARge24\\Controllers\\CarsController.cs",
               "ViewState": "AgIAAKgAAAAAAAAAAADwv7AAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-26T09:29:54.687Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-26T09:29:54.687Z"
             }
           ]
         },
