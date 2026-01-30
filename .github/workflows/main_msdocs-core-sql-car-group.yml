@@ -24,7 +24,7 @@ jobs:
       
       - name: Generate migrations bundle
         working-directory: ./Car_TARge24
-        run: dotnet ef migrations bundle --project Car_TARge24.Data/Car_TARge24.Data.csproj --startup-project Car_TARge24/Car_TARge24.csproj --self-contained -r win-x64 -o migrationsbundle
+        run: dotnet ef migrations bundle --project Car_TARge24.Data/Car_TARge24.Data.csproj --startup-project Car_TARge24/Car_TARge24.csproj --self-contained -r win-x64 -o migrationsbundle.exe
         
       - name: Build with dotnet
         run: dotnet build --configuration Release
@@ -69,4 +69,5 @@ jobs:
           app-name: 'msdocs-core-sql-CAR-group'
           slot-name: 'Production'
           package: .
+
 
